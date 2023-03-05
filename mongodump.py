@@ -13,7 +13,7 @@ day = now.strftime("%d")
 filename = "mongo/hyperion-mongo-prod{}{}{}0000.archive".format(year, month, day)
 # Download the last dump
 s3.download_file(
-    Bucket="digitech-hyperion", Key=filename, Filename='mongodump.archive'
+    Bucket="[bucket-name]", Key=filename, Filename='[archive or dump name]'
 )
 # Print sucess message
 print('Download Completed')
